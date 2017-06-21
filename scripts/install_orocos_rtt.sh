@@ -36,6 +36,7 @@ catkin_make_isolated --install --pkg rtt_ros
 catkin_make_isolated --install --pkg rtt_rosnode
 catkin_make_isolated --install --pkg rtt_roscomm
 catkin_make_isolated --install --pkg rtt_rosclock
+catkin_make_isolated --install --pkg utilrb
 catkin_make_isolated --install --pkg rtt_sensors_msgs
 
 
