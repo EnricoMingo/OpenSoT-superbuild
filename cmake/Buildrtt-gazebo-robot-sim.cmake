@@ -3,6 +3,7 @@ include(YCMEPHelper)
 include(FindOrBuildPackage)
 
 find_package(OROCOS-RTT QUIET)
+find_package(RST_RT QUIET)
 
 ycm_ep_helper(  rtt-gazebo-robot-sim
                 TYPE GIT
@@ -10,4 +11,5 @@ ycm_ep_helper(  rtt-gazebo-robot-sim
                 REPOSITORY cogimon/rtt-gazebo-robot-sim.git
                 TAG master
                 COMPONENT external
+                DEPENDS RST_RT
             )
