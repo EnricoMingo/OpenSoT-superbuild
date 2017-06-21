@@ -10,6 +10,6 @@ ycm_ep_helper(  RSB
                 STYLE NONE 
                 REPOSITORY https://code.cor-lab.org/git/rsb.git.cpp
                 TAG 0.14
-		DEPENDS RSC
+		DEPENDS RSC RSB_Protocol
                 COMPONENT RSB
             )
