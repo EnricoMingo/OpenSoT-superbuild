@@ -66,3 +66,9 @@ find_or_build_package_with_tag(Hose_Task OFF)
 # Compile ManipulationExample
 # --------------------------------------
 find_or_build_package_with_tag(ManipulationExample ON)
+
+# --------------------------------------
+# Compile sensors-description
+# --------------------------------------
+find_or_build_package_with_tag(sensors-description OFF)
+
