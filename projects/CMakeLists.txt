@@ -12,7 +12,9 @@ IF(SUPERBUILD_DRC_CORE)
     find_or_build_package(GYM)
     find_or_build_package(paramHelp)
 
-    find_or_build_package(comanapp)
+    # Compile Gazebo comanapp
+    find_or_build_package_with_tag(comanapp OFF)
+
 ENDIF(SUPERBUILD_DRC_CORE)
 
 # ----------------
