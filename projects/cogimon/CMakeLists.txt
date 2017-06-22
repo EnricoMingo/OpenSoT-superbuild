@@ -78,6 +78,11 @@ find_or_build_package_with_tag(rtt_coman OFF)
 find_or_build_package_with_tag(ros_orocos_joints_gui OFF)
 
 # --------------------------------------
+# Compile ros_orocos_joint_trajectory_server
+# --------------------------------------
+find_or_build_package_with_tag(ros_orocos_joint_trajectory_server OFF)
+
+# --------------------------------------
 # Compile compliance_ctrl
 # --------------------------------------
 find_or_build_package_with_tag(compliance_ctrl OFF)
