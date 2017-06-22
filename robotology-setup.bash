@@ -107,6 +107,7 @@ export LTDL_LIBRARY_PATH=$ROBOTOLOGY_ROOT/build/install/lib/roboptim-core:$LTDL_
 pathadd CMAKE_PREFIX_PATH $ROBOTOLOGY_ROOT/build/install
 export ROS_PACKAGE_PATH=$ROBOTOLOGY_ROOT/build/install/share:$ROS_PACKAGE_PATH
 pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/build/install/stacks
+pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/build/install/lib
 pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/IITComanRosPkg
 pathadd CPATH $ROBOTOLOGY_ROOT/build/install/include
 pathadd CPATH /opt/ros/${ROS_DISTRO}/include
@@ -123,7 +124,7 @@ if [ -d $ROBOTOLOGY_ROOT/robots/walkman_final_demo_field ]; then
 fi
 if [ -d $ROBOTOLOGY_ROOT/robots/iit-bigman-ros-pkg ]; then
         pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/iit-bigman-ros-pkg
-	pathadd GAZEBO_MODEL_PATH $ROBOTOLOGY_ROOT/robots/iit-bigman-ros-pkg/bigman_gazebo/database
+	 pathadd GAZEBO_MODEL_PATH $ROBOTOLOGY_ROOT/robots/iit-bigman-ros-pkg/bigman_gazebo/database
 fi
 
 if [ -d $ROBOTOLOGY_ROOT/robots/openth/ynl-hydra-ros-pkg ]; then
@@ -157,9 +158,7 @@ if [ -d ${ROBOTOLOGY_ROOT}/robots/gazebo_ros_demos ]; then
        pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/gazebo_ros_demos
 fi
 
-if [ -d ${ROBOTOLOGY_ROOT}/external/trajectory_utils ]; then
-       pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/external/trajectory_utils
-fi
+
 
 # vigir stuffs
 if [ -d $ROBOTOLOGY_ROOT/vigir/vigir_footstep_planning_basics ]; then
