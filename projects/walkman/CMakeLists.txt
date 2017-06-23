@@ -64,6 +64,11 @@ find_or_build_package_with_tag(walkman_final_demo_field OFF)
 find_or_build_package_with_tag(Hose_Task OFF)
 
 # --------------------------------------
+# Compile Head2Hand_Calib
+# --------------------------------------
+find_or_build_package_with_tag(Head2Hand_Calib OFF)
+
+# --------------------------------------
 # Compile ManipulationExample
 # --------------------------------------
 find_or_build_package_with_tag(ManipulationExample ON)
