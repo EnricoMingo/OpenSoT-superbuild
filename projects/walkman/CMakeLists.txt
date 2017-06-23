@@ -33,10 +33,11 @@ find_or_build_package_with_tag(chengxu_walking OFF)
 find_or_build_package_with_tag(Juan_FBcontrollers OFF)
 find_or_build_package_with_tag(yw_walking OFF)
 find_or_build_package_with_tag(DoorOpening OFF)
+find_or_build_package_with_tag(DebrisRemovalTask OFF)
+
 
 # Compile TESTPROJECTGIUSEPPE
 find_or_build_package_with_tag(TestProjectGiuseppe OFF)
-
 
 # --------------------------------------
 # Compile ReactiveWalk
