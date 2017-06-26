@@ -113,7 +113,7 @@ find_or_build_package_with_tag(MiscellaneousPlugins ON)
 # --------------------------------------
 # Compile trajectory_utils
 # --------------------------------------
-find_or_build_package_with_tag(trajectory_utils ON)
+find_or_build_package_with_tag(trajectory_utils OFF)
 
 # --------------------------------------
 # Compile ADVR_ROS
