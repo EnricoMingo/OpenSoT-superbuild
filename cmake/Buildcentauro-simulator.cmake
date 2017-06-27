@@ -6,7 +6,7 @@ ycm_ep_helper(  centauro-simulator
                 TYPE GIT
                 STYLE GITHUB
                 REPOSITORY ADVRHumanoids/centauro-simulator.git
-                TAG xbot_control_devel
+                TAG xbotdays_workshop
                 COMPONENT robots
                 DEPENDS
                 BUILD_COMMAND ""
