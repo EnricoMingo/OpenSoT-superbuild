@@ -1,4 +1,4 @@
-ADVR-CORE [![Build Status](https://travis-ci.org/ADVRHumanoids/advr-superbuild.svg?branch=master)](https://travis-ci.org/ADVRHumanoids/advr-superbuild)
+ADVR-CORE [![Build Status](https://travis-ci.org/ADVRHumanoids/advr-superbuild.svg?branch=xbotdays_workshop)](https://travis-ci.org/ADVRHumanoids/advr-superbuild)
 
 advr-superbuild
 =====================
