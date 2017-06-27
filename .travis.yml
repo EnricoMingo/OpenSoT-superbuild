@@ -1,6 +1,14 @@
 language: cpp
 compiler: g++
 dist: trusty
+notifications:
+  email:
+    recipients:
+      - Luca.muratore@iit.it
+      - Arturo.Laurenzi@iit.it
+      - giuseppe.rigano@iit.it 
+    on_success: never
+    on_failure: always
 # Handle git submodules yourself
 #git:
 #    submodules: false
