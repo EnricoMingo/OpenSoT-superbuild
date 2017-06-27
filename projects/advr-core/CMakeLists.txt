@@ -108,22 +108,22 @@ find_or_build_package_with_tag(OpenSoT-lite OFF)
 # ----------------
 # Compile MiscellaneousPlugins
 # ----------------
-find_or_build_package_with_tag(MiscellaneousPlugins OFF)
+find_or_build_package_with_tag(MiscellaneousPlugins ON)
 
 # --------------------------------------
 # Compile trajectory_utils
 # --------------------------------------
-find_or_build_package_with_tag(trajectory_utils OFF)
+find_or_build_package_with_tag(trajectory_utils ON)
 
 # --------------------------------------
 # Compile ADVR_ROS
 # --------------------------------------
-find_or_build_package_with_tag(ADVR_ROS OFF)
+find_or_build_package_with_tag(ADVR_ROS ON)
 
 # --------------------------------------
 # Compile ManipulationPlugin
 # --------------------------------------
-find_or_build_package_with_tag(ManipulationPlugin OFF)
+find_or_build_package_with_tag(ManipulationPlugin ON)
 
 # --------------------------------------
 # gazebo_magnetic_attach_plugin
