@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/ADVRHumanoids/advr-superbuild.svg?branch=master)](https://travis-ci.org/ADVRHumanoids/advr-superbuild)
+
 advr-superbuild
 =====================
 
