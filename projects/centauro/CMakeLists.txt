@@ -8,59 +8,10 @@ set(YCM_GIT_GITLAB_ADVRCLOUD_BASE_ADDRESS "ssh://git@gitlab.advrcloud.iit.it/" C
 # --------------------------
 find_or_build_package_with_tag(centauro-simulator OFF)
 
-# -------------------------
-# Compile RobotInterfaceROS_CustomCmndInterface
-# -------------------------
-find_or_build_package_with_tag(RobotInterfaceROS_CustomCmndInterface OFF)
+# --------------------------
+# Compile XBotDaysWorkshop
+# --------------------------
+find_or_build_package_with_tag(XBotDaysWorkshop OFF)
 
-# -------------------------
-# Compile CentauroUDP
-# -------------------------
-find_or_build_package_with_tag(CentauroUDP OFF)
-
-# -------------------------
-# Compile centauro_bonn_review_plugins
-# -------------------------
-find_or_build_package_with_tag(centauro_bonn_review_plugins OFF)
-
-# -------------------------
-# Compile KeyboardControl
-# -------------------------
-find_or_build_package_with_tag(KeyboardControl OFF)
-
-# -------------------------
-# Compile KeyboardControl
-# -------------------------
-find_or_build_package_with_tag(InverseKinematics OFF)
-
-# -------------------------
-# QPPVM_RT_plugin
-# -------------------------
-find_or_build_package_with_tag(QPPVM_RT_plugin OFF)
-
-# -------------------------
-# Artificial Potential Fields
-# -------------------------
-find_or_build_package_with_tag(ArtificialPotentialFields OFF)
-
-# ---------------------
-# Compile QPBuilder
-# ---------------------
-find_or_build_package_with_tag(QPBuilder OFF)
-
-# ---------------------
-# Compile MpcLocomotion
-# ---------------------
-find_or_build_package_with_tag(MpcLocomotion OFF)
-
-# ---------------------
-# Compile QPOases
-# ---------------------
-find_or_build_package_with_tag(QPOases OFF)
-
-# ---------------------
-# Compile bi-man2 
-# ---------------------
-find_or_build_package_with_tag(bi-man2 OFF)
 
 
