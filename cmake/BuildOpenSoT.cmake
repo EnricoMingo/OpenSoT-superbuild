@@ -2,8 +2,6 @@
 include(YCMEPHelper)
 include(FindOrBuildPackage)
 
-find_or_build_package(iDynTree QUIET)
-find_or_build_package(idynutils QUIET)
 find_or_build_package(XBotInterface QUIET)
 
 # Workaround to use qpOASES that does not have an install target or cmake config
@@ -21,8 +19,6 @@ ycm_ep_helper(  OpenSoT TYPE GIT
                 REPOSITORY robotology-playground/OpenSoT.git
                 TAG devel
                 COMPONENT external
-                DEPENDS iDynTree
-                        idynutils
-                        XBotInterface
-                CMAKE_CACHE_ARGS -DOPENSOT_COMPILE_TESTS:BOOL=ON
+                DEPENDS XBotInterface
+                CMAKE_CACHE_ARGS -DOPENSOT_COMPILE_TESTS:BOOL=OFF
             )
