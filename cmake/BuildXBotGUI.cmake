@@ -14,4 +14,5 @@ ycm_ep_helper(  XBotGUI
                 COMPONENT external
                 DEPENDS XBotCoreModel
 			XBotInterface
+			ADVR_ROS
              )

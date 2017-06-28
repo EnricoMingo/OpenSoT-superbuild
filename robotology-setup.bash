@@ -121,6 +121,7 @@ pathadd GAZEBO_MODEL_PATH $ROBOTOLOGY_ROOT/robots/IITComanRosPkg/coman_gazebo/da
 pathadd GAZEBO_MODEL_PATH $ROBOTOLOGY_ROOT/robots/icub_gazebo
 if [ -d $ROBOTOLOGY_ROOT/robots/walkman_final_demo_field ]; then
        pathadd GAZEBO_MODEL_PATH $ROBOTOLOGY_ROOT/robots/walkman_final_demo_field
+       pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/walkman_final_demo_field
 fi
 if [ -d $ROBOTOLOGY_ROOT/robots/iit-bigman-ros-pkg ]; then
         pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/iit-bigman-ros-pkg
