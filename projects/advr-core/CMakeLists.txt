@@ -83,7 +83,7 @@ endif(SUPERBUILD_XBotCore)
 # ------------------------
 # Compile GazeboXBotPlugin
 # ------------------------
-find_or_build_package_with_tag(GazeboXBotPlugin OFF)
+find_or_build_package_with_tag(GazeboXBotPlugin ON)
 
 # ----------------
 # Compile EtherCAT_tools
