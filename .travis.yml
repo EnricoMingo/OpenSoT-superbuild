@@ -43,5 +43,7 @@ script:
 - cmake -DADVR-CORE=ON -DBUILD_TESTING=ON -DBUILD_TESTS=ON -DBUILD_SIMULATION_TESTS=ON -DSHOW_TEST_RESULTS=ON -DXBOT_SIMULATION_TESTS_VISUALIZATION=ON ..
 - make
 ############
+- cd external/XBotInterface
+- make test
 #- ./mytest
 #- make test
