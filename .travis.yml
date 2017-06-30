@@ -44,6 +44,6 @@ script:
 - make
 ############
 - cd external/XBotInterface
-- make test
+- make test VERBOSE=1
 #- ./mytest
 #- make test
