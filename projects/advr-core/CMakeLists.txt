@@ -83,7 +83,7 @@ endif(SUPERBUILD_XBotCore)
 # ------------------------
 # Compile GazeboXBotPlugin
 # ------------------------
-find_or_build_package_with_tag(GazeboXBotPlugin ON)
+find_or_build_package_with_tag(GazeboXBotPlugin OFF)
 
 # ----------------
 # Compile EtherCAT_tools
@@ -108,22 +108,22 @@ find_or_build_package_with_tag(OpenSoT-lite OFF)
 # ----------------
 # Compile MiscellaneousPlugins
 # ----------------
-find_or_build_package_with_tag(MiscellaneousPlugins ON)
+find_or_build_package_with_tag(MiscellaneousPlugins OFF)
 
 # --------------------------------------
 # Compile trajectory_utils
 # --------------------------------------
-find_or_build_package_with_tag(trajectory_utils ON)
+find_or_build_package_with_tag(trajectory_utils OFF)
 
 # --------------------------------------
 # Compile ADVR_ROS
 # --------------------------------------
-find_or_build_package_with_tag(ADVR_ROS ON)
+find_or_build_package_with_tag(ADVR_ROS OFF)
 
 # --------------------------------------
 # Compile ManipulationPlugin
 # --------------------------------------
-find_or_build_package_with_tag(ManipulationPlugin ON)
+find_or_build_package_with_tag(ManipulationPlugin OFF)
 
 # --------------------------------------
 # gazebo_magnetic_attach_plugin
