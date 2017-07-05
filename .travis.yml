@@ -1,6 +1,6 @@
 language: cpp
 compiler: g++
-dist: xenial
+dist: trusty
 notifications:
   email:
     recipients:
