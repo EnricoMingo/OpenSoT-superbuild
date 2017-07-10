@@ -5,6 +5,9 @@ set(YCM_GIT_GITLAB_ADVRCLOUD_BASE_ADDRESS "ssh://git@gitlab.advrcloud.iit.it/" C
 # Using Walk-Man Demos related projects OFF by default
 set(USE_WALKMAN_DEMOS_PROJECTS OFF CACHE BOOL "Enable the download and usages of repos related to the Walk-Man project demos")
 
+# Compile Gazebo YARP plugin
+find_or_build_package_with_tag(GazeboYARPPlugins OFF)
+
 find_or_build_package_with_tag(drc_shared OFF)
 find_or_build_package_with_tag(iit-bigman-ros-pkg OFF)
 find_or_build_package_with_tag(locoman_utils OFF)
