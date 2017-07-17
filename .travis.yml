@@ -38,6 +38,7 @@ script:
 - mkdir -p build
 - cd build
 - cmake -DADVR-CORE=ON ..
+- cmake -DSUPERBUILD_XBotGUI=ON ..
 - make
 ############
 #- ./mytest
