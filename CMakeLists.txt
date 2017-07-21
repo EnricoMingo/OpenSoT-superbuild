@@ -63,103 +63,11 @@ include(YCMBootstrap)
 include(FindOrBuildPackage)
 include(YCMEPHelper)
 
-#set(USE_SYSTEM_YARP OFF CACHE BOOL "Initial cache")
-#set(USE_SYSTEM_KDL_CODYCO OFF CACHE BOOL "Initial cache")
-#set(USE_SYSTEM_IDYNTREE OFF CACHE BOOL "Initial cache")
-#set(USE_SYSTEM_PARAMHELP OFF CACHE BOOL "Initial cache")
-#set(USE_SYSTEM_OPENSOT OFF CACHE BOOL "Initial cache")
-#set(USE_SYSTEM_IDYNUTILS OFF CACHE BOOL "Initial cache")
-#set(USE_SYSTEM_GYM OFF CACHE BOOL "Initial cache")
+## Insert here the OpenSoT related packages to compile ##
 
-# Only open source repo by default
-set(USE_ONLY_OPEN_SOURCE ON CACHE BOOL "Only the open-source repo will be cloned and built")
-# CORE packages
-set(USE_DRC_CORE_PACKAGES OFF CACHE BOOL "CORE packages for robotology-superbuild")
-# Tokyo University HYDRA OFF by default
-set(YNL_HYDRA_TOKYO_UNIVERSITY OFF CACHE BOOL "Enable the download and usages of repos from University of Tokyo YNL Lab")
-# ADVR-CORE packages
-set(ADVR-CORE OFF CACHE BOOL "Enable the download and usages of ADVR core packages")
-# CENTAURO EU Project 
-set(CENTAURO_EU OFF CACHE BOOL "Enable the download and usages of repos related to the CENTAURO project")
-# CENTAURO EU Project 
-set(PHOLUS OFF CACHE BOOL "Enable the download and usages of repos related to the PHOLUS project")
-# COGIMON EU Project 
-set(COGIMON_EU OFF CACHE BOOL "Enable the download and usages of repos related to the CoGiMon project")
-# DEPRECATED packages 
-set(DEPRECATED_PACKAGES OFF CACHE BOOL "Enable the download and usages of repos from all the projects that are considered as DEPRECATED and not longer maintained")
-# VIGIR Project 
-set(VIGIR OFF CACHE BOOL "Enable the download and usages of repos related to vigir robot team")
-# WALK-MAN EU Project 
-set(WALKMAN_EU OFF CACHE BOOL "Enable the download and usages of repos related to the WALK-MAN project")
-
-IF(NOT USE_ONLY_OPEN_SOURCE)
-	# set ssh connection with gitlab using rsa keys.
-	set(YCM_GIT_GITLAB_ROBOTOLOGY_BASE_ADDRESS "ssh://git@gitlab.robotology.eu/" CACHE STRING "Address to use for Robotology Gitlab git repositories" FORCE)
-ENDIF(NOT USE_ONLY_OPEN_SOURCE)
-
-# --------------------------------------
-# Compile set of CORE packages
-# --------------------------------------
-IF(USE_DRC_CORE_PACKAGES)
-	add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/projects)
-ENDIF(USE_DRC_CORE_PACKAGES)
-
-# --------------------------------------
-# Compile related ADVR-CORE packages
-# --------------------------------------
-IF(ADVR-CORE)
-       include(${CMAKE_CURRENT_SOURCE_DIR}/projects/advr-core/CMakeLists.txt)
-ENDIF(ADVR-CORE)
-
-# --------------------------------------
-# Compile related CENTAURO packages
-# --------------------------------------
-IF(CENTAURO_EU)
-       add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/projects/centauro)
-ENDIF(CENTAURO_EU)
-
-# --------------------------------------
-# Compile related PHOLUS packages
-# --------------------------------------
-IF(PHOLUS)
-       include(${CMAKE_CURRENT_SOURCE_DIR}/projects/pholus/CMakeLists.txt)
-ENDIF(PHOLUS)
-
-# --------------------------------------
-# Compile related COGIMON packages
-# --------------------------------------
-IF(COGIMON_EU)
-       add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/projects/cogimon)
-ENDIF(COGIMON_EU)
-
-# --------------------------------------
-# Compile related VIGIR packages
-# --------------------------------------
-IF(VIGIR)
-       include(${CMAKE_CURRENT_SOURCE_DIR}/projects/vigir/CMakeLists.txt)
-ENDIF(VIGIR)
+##
 
 
-# --------------------------------------
-# Compile related WALK-MAN packages
-# --------------------------------------
-IF(WALKMAN_EU)
-       add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/projects/walkman)
-ENDIF(WALKMAN_EU)
-
-# --------------------------------------
-# Compile related TOKYO UNIVERSITY packages
-# --------------------------------------
-IF(YNL_HYDRA_TOKYO_UNIVERSITY)
-	add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/projects/tokyo_university_ynl)
-ENDIF(YNL_HYDRA_TOKYO_UNIVERSITY)
-
-# --------------------------------------
-# Compile DEPRECATED packages
-# --------------------------------------
-IF(DEPRECATED_PACKAGES)
-       add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/projects/DEPRECATED)
-ENDIF(DEPRECATED_PACKAGES)
 
 set_package_properties(Git PROPERTIES TYPE RUNTIME)
 set_package_properties(Subversion PROPERTIES TYPE RUNTIME)
