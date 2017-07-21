@@ -1,5 +1,0 @@
-# LPMS IMU device
-SUBSYSTEM=="usb", ACTION=="add", ATTR{idVendor}=="0403", ATTR{idProduct}=="6001", MODE="666",  PROGRAM="/bin/bash -c '/etc/udev/rules.d/custom_imu_devicefile_name.sh $ID_SERIAL_SHORT", SYMLINK+="%c"
-
-# nothing special to do on removal
-# SUBSYSTEM=="usb", ACTION=="remove", ENV{ID_VENDOR_ID}=="0403", ENV{ID_MODEL_ID}=="6001", RUN+=" "
