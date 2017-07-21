@@ -28,11 +28,6 @@ find_or_build_package_with_tag(sharedlibpp ON)
 # -------------------------
 find_or_build_package_with_tag(ModelInterfaceRBDL ON)
 
-# -------------------
-# Compile ADVR_shared
-# -------------------
-find_or_build_package_with_tag(ADVR_shared OFF)
-
 # --------------------------------------
 # Compile trajectory_utils
 # --------------------------------------
