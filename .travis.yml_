@@ -1,0 +1,45 @@
+language: cpp
+compiler: g++
+dist: trusty
+notifications:
+  email:
+    recipients:
+      - Luca.muratore@iit.it
+      - Arturo.Laurenzi@iit.it
+      - giuseppe.rigano@iit.it 
+    on_success: never
+    on_failure: always
+# Handle git submodules yourself
+#git:
+#    submodules: false
+# Use sed to replace the SSH URL with the public URL, then initialize submodules
+sudo: required
+before_install:
+    #- go get ADVRHumanoids/xbotcoremodel.git
+    #- sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
+    #- git submodule update --init --recursive
+script: 
+#config git
+- git config --global user.name "pepperig"
+- git config --global user.email "giusepperig@hotmail.it"
+#source env variables and install missing packages
+- sudo apt-get install cmake
+- pwd
+- ls
+- ./scripts/basic_setup.sh
+- chmod 777 ./robotology-setup.bash
+- source ./robotology-setup.bash
+- cd /
+- source opt/ros/indigo/setup.bash
+- cd -
+- pip install catkin_pkg
+- pip install empy
+#Build
+- mkdir -p build
+- cd build
+- cmake -DADVR-CORE=ON ..
+- cmake -DSUPERBUILD_XBotGUI=ON ..
+- make
+############
+#- ./mytest
+#- make test
