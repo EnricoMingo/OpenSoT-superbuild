@@ -30,15 +30,9 @@ else
               libpng++-dev python-bs4 libsctp-dev mercurial libhighgui2.4 \
               libopensplice64 cppcheck \
               python3-empy python3-setuptools python3-nose python3-pip python3-vcstool \
-	      protobuf-compiler
+	       protobuf-compiler ros-indigo-rviz-visual-tools
             string="`uname -r`"
             
-            if [ "${ROBOTOLOGY_PROFILE:=DEFAULT}" != 'ROBOT' ]; then
-              # clean up previous versions
-              sudo apt-get remove gazebo*
-              # install gazebo 6 and the dev
-              sudo apt-get install -y --force-yes --fix-missing ros-indigo-gazebo6-* libgazebo6-dev
-            fi
         elif [ "`lsb_release -cs`" = 'xenial' ]; then
             sudo apt install -y --allow-unauthenticated --fix-missing build-essential cmake cmake-curses-gui  \
               git subversion doxygen graphviz  \
@@ -48,7 +42,7 @@ else
               libpng++-dev python-bs4 libsctp-dev mercurial libhighgui2.4 \
               libopensplice64 cppcheck \
               python3-empy python3-setuptools python3-nose python3-pip python3-vcstool \
-	      protobuf-compiler
+	       protobuf-compiler ros-kinetic-rviz-visual-tools 
 
             mkdir -p $ROBOTOLOGY_ROOT/build
             cd $ROBOTOLOGY_ROOT/build
