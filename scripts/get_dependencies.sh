@@ -79,7 +79,7 @@ else
         # call the script to insall PCL from sources commented
         # sh $ROBOTOLOGY_ROOT/scripts/admin/get_pcl.sh
 
-	sudo apt-get install libpcl*
+    #	sudo apt-get install libpcl*
     #fi
 
     

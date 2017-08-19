@@ -36,6 +36,11 @@ script:
 - source ./OpenSoT-setup.bash
 - pip install catkin_pkg
 - pip install empy
+
+- git config --global user.name
+- git config --global user.email
+
+
 #Build
 - mkdir -p build
 - cd build
