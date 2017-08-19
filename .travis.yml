@@ -19,7 +19,7 @@ before_install:
 script: 
 #config git
 - git config --global user.name "Enrico Mingo"
-- git config --global user.email "enricomingo@gmail.com"
+- git config --global user.email "enrico.mingo@iit.it"
 #source env variables and install missing packages
 - sudo apt-get install cmake
 - sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
