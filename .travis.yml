@@ -18,7 +18,7 @@ before_install:
     #- git submodule update --init --recursive
 script: 
 #config git
-- git config --global user.name "EnricoMingo"
+- git config --global user.name "Enrico Mingo"
 - git config --global user.email "enricomingo@gmail.com"
 #source env variables and install missing packages
 - sudo apt-get install cmake
@@ -28,7 +28,7 @@ script:
 - sudo apt-get install ros-indigo-desktop
 - sudo rosdep init
 - rosdep update
-- source opt/ros/indigo/setup.bash
+- source /opt/ros/indigo/setup.bash
 - pwd
 - ls
 - ./scripts/get_dependencies.sh
