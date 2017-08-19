@@ -20,7 +20,7 @@ script:
 #config git
 - git config --global user.name "EnricoMingo"
 - git config --global user.email "enricomingo@gmail.com"
-#source env variables and install missing packages and ROS
+#source env variables and install missing packages
 - sudo apt-get install cmake
 - sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
 - sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 421C365BD9FF1F717815A3895523BAEEB01FA116
