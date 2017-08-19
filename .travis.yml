@@ -40,7 +40,7 @@ script:
 - git config --global user.name
 - git config --global user.email
 
-
+- pwd
 #Build
 - mkdir -p build
 - cd build
