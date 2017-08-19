@@ -7,7 +7,9 @@ OpenSoT dedicated building system.
 
 Build and Install instruction (Ubuntu 14.04 LTS & ROS Indigo Igloo):
 --------------------------------------------------------------------
-Clone the reposotory in any folder you want.
+Before cloning, make sure to have installed ROS Indigo in your machine.
+
+Clone the repository in any folder you want.
 
 Go in side the scripts folder:
 
