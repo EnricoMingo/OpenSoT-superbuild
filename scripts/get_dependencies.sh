@@ -72,15 +72,15 @@ else
     . $ROBOTOLOGY_ROOT/OpenSoT-setup.bash
 
     # ROS indigo
-    if [ -d /opt/ros/indigo ]; then
-        ROSVER=indigo
+    #if [ -d /opt/ros/indigo ]; then
+    #    ROSVER=indigo
         #call the script to install opencv nonfree lib from sources
-        sh $ROBOTOLOGY_ROOT/scripts/admin/get_libopencv_nonfree.sh	
+    #    sh $ROBOTOLOGY_ROOT/scripts/admin/get_libopencv_nonfree.sh	
         # call the script to insall PCL from sources commented
         # sh $ROBOTOLOGY_ROOT/scripts/admin/get_pcl.sh
 
 	sudo apt-get install libpcl*
-    fi
+    #fi
 
     
     if [ -d $ROBOTOLOGY_ROOT/build/ ]; then
