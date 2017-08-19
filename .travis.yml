@@ -37,10 +37,10 @@ script:
 - pip install catkin_pkg
 - pip install empy
 
+- sudo chmod 777 "$HOME/.gitconfig"
 - git config --global user.name
 - git config --global user.email
 
-- pwd
 #Build
 - mkdir -p build
 - cd build
