@@ -30,7 +30,9 @@ else
               libpng++-dev python-bs4 libsctp-dev mercurial libhighgui2.4 \
               libopensplice64 cppcheck \
               python3-empy python3-setuptools python3-nose python3-pip python3-vcstool \
-	       protobuf-compiler ros-indigo-rviz-visual-tools
+	       protobuf-compiler   \
+              ros-indigo-kdl-conversions ros-indigo-eigen-stl-containers \
+              ros-indigo-geometry ros-indigo-graph-msgs ros-indigo-rviz-visual-tools
             string="`uname -r`"
             
         elif [ "`lsb_release -cs`" = 'xenial' ]; then
@@ -42,7 +44,9 @@ else
               libpng++-dev python-bs4 libsctp-dev mercurial libhighgui2.4 \
               libopensplice64 cppcheck \
               python3-empy python3-setuptools python3-nose python3-pip python3-vcstool \
-	       protobuf-compiler ros-kinetic-rviz-visual-tools 
+	       protobuf-compiler \
+              ros-kinetic-kdl-conversions ros-kinetic-eigen-stl-containers \
+              ros-kinetic-geometry ros-kinetic-graph-msgs ros-kinetic-rviz-visual-tools 
 
             mkdir -p $ROBOTOLOGY_ROOT/build
             cd $ROBOTOLOGY_ROOT/build
