@@ -29,6 +29,7 @@ script:
 - sudo rosdep init
 - rosdep update
 - source /opt/ros/indigo/setup.bash
+- sudo apt-get install ros-indigo-rviz-visual-tools #THIS SHOULD BE INSTALLED BY get_dependency.sh
 - pwd
 - ls
 - ./scripts/get_dependencies.sh
@@ -46,7 +47,6 @@ script:
 - cd build
 - cmake ..
 - make
-- sudo apt-get install ros-indigo-rviz-visual-tools #THIS SHOULD BE INSTALLED BY get_dependency.sh
 - cd external/trajectory_utils/
 - cmake ../../../external/trajectory_utils -DTRAJECTORY_UTILS_COMPILE_EXAMPLES:BOOL=TRUE -DTRAJECTORY_UTILS_COMPILE_TRJ_DESIG:BOOL=TRUE
 - make
