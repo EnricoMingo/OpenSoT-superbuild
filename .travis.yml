@@ -46,6 +46,10 @@ script:
 - cd build
 - cmake ..
 - make
+- cd external/trajectory_utils/
+- cmake -DTRAJECTORY_UTILS_COMPILE_EXAMPLES:BOOL=TRUE -DTRAJECTORY_UTILS_COMPILE_TRJ_DESIG:BOOL=TRUE
+- make
+- make install
 ############
 #- ./mytest
 #- make test
