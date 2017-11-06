@@ -46,6 +46,7 @@ script:
 - cd build
 - cmake ..
 - make
+- sudo apt-get install ros-indigo-rviz-visual-tools
 - cd external/trajectory_utils/
 - cmake ../../../external/trajectory_utils -DTRAJECTORY_UTILS_COMPILE_EXAMPLES:BOOL=TRUE -DTRAJECTORY_UTILS_COMPILE_TRJ_DESIG:BOOL=TRUE
 - make
