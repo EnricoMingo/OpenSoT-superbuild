@@ -1,0 +1,42 @@
+RobotInterfaceROS:
+  subclass_name: "RobotInterfaceROS"
+  path_to_shared_lib: "libRobotInterfaceROS.so"
+  subclass_factory_name: "robot_interface_ros"
+  control_message_type: "AdvrCommandMessage"
+  jointstate_message_type: "AdvrJointStateMessage"
+  publish_tf: "true"
+
+RobotInterfaceOROCOS:
+  subclass_name: "RobotInterfaceOROCOS"
+  path_to_shared_lib: "libRobotInterfaceOROCOS.so"
+  subclass_factory_name: "robot_interface_orocos"
+
+RobotInterfaceXBotRT:
+  subclass_name: "RobotInterfaceXBotRT"
+  path_to_shared_lib: "libRobotInterfaceXBotRT.so"
+  subclass_factory_name: "robot_interface_xbot_rt"
+
+AdvrCommandMessage:
+  subclass_name: "CommandAdvr"
+  path_to_shared_lib: "libAdvrCommandMessage.so"
+  subclass_factory_name: "advrcommandmessage_control_message"
+
+AdvrJointStateMessage:
+  subclass_name: "AdvrJointState"
+  path_to_shared_lib: "libAdvrJointStateMessage.so"
+  subclass_factory_name: "advrjointstate_jointstate_message"
+
+RobotInterfaceDUMMY:
+  subclass_name: "RobotInterfaceDUMMY"
+  path_to_shared_lib: "libRobotInterfaceDUMMY.so"
+  subclass_factory_name: "robot_interface_dummy"
+
+ModelInterfaceRBDL:
+  subclass_name: "ModelInterfaceRBDL"
+  path_to_shared_lib: "libModelInterfaceRBDL.so"
+  subclass_factory_name: "model_interface_rbdl"
+
+ModelInterfaceIDYNUTILS:
+  subclass_name: "ModelInterfaceIDYNUTILS"
+  path_to_shared_lib: "libModelInterfaceIDYNUTILS.so"
+  subclass_factory_name: "model_interface_idynutils"
