@@ -46,7 +46,7 @@ script:
 
 - mkdir external
 - cd external
-- hg clone https://bitbucket.org/rbdl/rbdl
+- hg clone --insecure https://bitbucket.org/rbdl/rbdl
 - cd ..
 
 - mkdir -p build
