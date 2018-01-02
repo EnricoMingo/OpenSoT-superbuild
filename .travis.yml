@@ -48,11 +48,17 @@ script:
 - cmake ..
 - make
 - cd external/trajectory_utils/
+#Tests
 - cmake ../../../external/trajectory_utils -DTRAJECTORY_UTILS_COMPILE_EXAMPLES:BOOL=TRUE -DTRAJECTORY_UTILS_COMPILE_TRJ_DESIG:BOOL=TRUE -DTRAJECTORY_UTILS_COMPILE_TESTS:BOOL=TRUE
 - make
 - make install
 - make test
-- cd ../OpenSoT
+
+- cd ../../external/OpenSoT
+- git fetch --all
+- git checkout devel
+
+- cd ../../../build/external/OpenSoT
 - cmake ../../../external/OpenSoT -DOPENSOT_COMPILE_TESTS:BOOL=TRUE
 - make
 - make install
