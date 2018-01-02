@@ -58,7 +58,7 @@ script:
 - git fetch --all
 - git checkout devel
 
-- cd ../../../build/external/OpenSoT
+- cd ../../build/external/OpenSoT
 - cmake ../../../external/OpenSoT -DOPENSOT_COMPILE_TESTS:BOOL=TRUE
 - make
 - make install
