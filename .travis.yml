@@ -52,6 +52,11 @@ script:
 - make
 - make install
 - make test
+- cd ../OpenSoT
+- cmake ../../../external/OpenSoT -DOPENSOT_COMPILE_TESTS:BOOL=TRUE
+- make
+- make install
+- make test
 ############
 #- ./mytest
 #- make test
