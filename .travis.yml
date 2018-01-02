@@ -54,7 +54,7 @@ script:
 - make install
 - make test
 
-- cd ../../external/OpenSoT
+- cd ../../../external/OpenSoT
 - git fetch --all
 - git checkout devel
 
