@@ -46,4 +46,4 @@ find_or_build_package_with_tag(mpcqp_walking ON)
 # --------------------------------------
 # Compile CartesianInterface
 # --------------------------------------
-find_or_build_package_with_tag(CartesianInterface ON)
+find_or_build_package_with_tag(CartesianInterface OFF)
