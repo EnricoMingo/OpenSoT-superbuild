@@ -42,3 +42,8 @@ find_or_build_package_with_tag(compliant_stabilizer ON)
 # Compile mpcqp_walking
 # --------------------------------------
 find_or_build_package_with_tag(mpcqp_walking ON)
+
+# --------------------------------------
+# Compile CartesianInterface
+# --------------------------------------
+find_or_build_package_with_tag(CartesianInterface ON)
