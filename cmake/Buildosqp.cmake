@@ -8,4 +8,5 @@ ycm_ep_helper(  osqp TYPE GIT
                 TAG master
                 COMPONENT external
                 CMAKE_CACHE_ARGS -DDLONG:BOOL=OFF
+                		 -DUNITTESTS:BOOL=OFF
             )
