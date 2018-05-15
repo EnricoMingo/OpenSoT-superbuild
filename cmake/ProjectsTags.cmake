@@ -15,6 +15,6 @@ set(roboptim-capsule_TAG 7ac32a4c) # needs master on 16.04
 # utils: put the SHA1 of the commit or the TAG, not the branch name.
 #set(drc_shared_TAG 8289f4fed1dd)
 set(trajectory_generator_TAG 332b984362)
-
+set(rbdl_TAG 3791847)
 
 
