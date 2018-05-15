@@ -1,7 +1,8 @@
 # Superbuild
 set(YCM_TAG 538bec08ad3)
 
-set(OpenSoT_TAG v2.0)
+#set(OpenSoT_TAG v2.0)
+set(OpenSoT_TAG backend_loader)
 set(fcl_TAG 54e9619bc2b)
 
 
