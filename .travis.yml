@@ -56,7 +56,7 @@ script:
 
 - cd ../../../external/OpenSoT
 - git fetch --all
-- git checkout devel
+- git checkout backend_loader
 
 - cd ../../build/external/OpenSoT
 - cmake ../../../external/OpenSoT -DOPENSOT_COMPILE_TESTS:BOOL=TRUE
