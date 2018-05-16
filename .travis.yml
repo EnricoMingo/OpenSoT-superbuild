@@ -46,7 +46,7 @@ script:
 - mkdir -p build
 - cd build
 - cmake ..
-- make -j8
+- make
 - cd external/trajectory_utils/
 #Tests
 - cmake ../../../external/trajectory_utils -DTRAJECTORY_UTILS_COMPILE_EXAMPLES:BOOL=TRUE -DTRAJECTORY_UTILS_COMPILE_TRJ_DESIG:BOOL=TRUE -DTRAJECTORY_UTILS_COMPILE_TESTS:BOOL=TRUE
