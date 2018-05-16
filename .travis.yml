@@ -52,7 +52,7 @@ script:
 - cmake ../../../external/trajectory_utils -DTRAJECTORY_UTILS_COMPILE_EXAMPLES:BOOL=TRUE -DTRAJECTORY_UTILS_COMPILE_TRJ_DESIG:BOOL=TRUE -DTRAJECTORY_UTILS_COMPILE_TESTS:BOOL=TRUE
 - make -j8
 - make install
-- make test
+- make test ARGS="-V"
 
 - cd ../../../external/OpenSoT
 - git fetch --all
@@ -62,7 +62,7 @@ script:
 - cmake ../../../external/OpenSoT -DOPENSOT_COMPILE_TESTS:BOOL=TRUE
 - make -j8
 - make install
-- make test
+- make test ARGS="-V"
 ############
 #- ./mytest
 #- make test
