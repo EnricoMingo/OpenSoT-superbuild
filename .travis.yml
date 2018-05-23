@@ -55,6 +55,13 @@ script:
 #- make test ARGS="-V"
 - make test
 
+- cd ../XBotInterface
+- cmake ../../../external/XBotInterface -DBUILD_TESTS:BOOL=TRUE
+- make -j8
+- make install
+#- make test ARGS="-V"
+- make test 
+
 - cd ../../../external/OpenSoT
 - git fetch --all
 - git checkout devel
