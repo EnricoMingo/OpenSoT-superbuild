@@ -9,7 +9,7 @@ ycm_ep_helper(  ModelInterfaceRBDL
                 TYPE GIT
                 STYLE GITHUB
                 REPOSITORY ADVRHumanoids/ModelInterfaceRBDL.git
-                TAG master
+                TAG devel
                 COMPONENT external
 		DEPENDS rbdl
 			XBotInterface
