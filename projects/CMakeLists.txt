@@ -7,12 +7,12 @@ cmake_minimum_required(VERSION 2.8.12)
 # OpenSoT
 #------
 find_or_build_package(OpenSoT)
-find_or_build_package_with_tag(osqp OFF)
+find_or_build_package_with_tag(osqp ON)
  
 #------
 # Models
 #------
-find_or_build_package_with_tag(IITComanRosPkg OFF)
+find_or_build_package_with_tag(IITComanRosPkg ON)
 
 # -------------------------------------------
 # Compile CAPSULE for the collision avoidance
