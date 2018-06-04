@@ -10,7 +10,7 @@ ycm_ep_helper(  XBotInterface
                 TYPE GIT
                 STYLE GITHUB
                 REPOSITORY ADVRHumanoids/XBotInterface.git
-                TAG master
+                TAG devel
                 COMPONENT external
                 DEPENDS XBotCoreModel
 			sharedlibpp
