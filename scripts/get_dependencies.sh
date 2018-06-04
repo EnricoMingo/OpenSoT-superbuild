@@ -96,5 +96,6 @@ else
     sudo ldconfig
 
     sudo pip install -U setuptools
+    sudo pip install BeautifulSoup4
 
 fi
