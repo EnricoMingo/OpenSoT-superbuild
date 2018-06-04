@@ -97,5 +97,6 @@ else
 
     sudo pip install -U setuptools
     sudo pip install BeautifulSoup4
+    pip install lxml
 
 fi
