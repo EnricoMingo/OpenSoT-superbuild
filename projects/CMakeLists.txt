@@ -12,7 +12,7 @@ find_or_build_package_with_tag(osqp ON)
 #------
 # Models
 #------
-find_or_build_package_with_tag(IITComanRosPkg ON)
+find_or_build_package_with_tag(IITComanRosPkg OFF)
 
 # -------------------------------------------
 # Compile CAPSULE for the collision avoidance

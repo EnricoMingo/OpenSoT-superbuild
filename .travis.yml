@@ -73,7 +73,3 @@ script:
 #- make test ARGS="-V"
 - make test
 
-- cd ${ROBOTOLOGY_SUPERBUILD}
-- source OpenSoT-setup.bash
-- roscd coman_urdf
-
