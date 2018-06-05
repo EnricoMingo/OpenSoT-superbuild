@@ -19,3 +19,7 @@ set(trajectory_generator_TAG 332b984362)
 set(rbdl_TAG 3791847)
 
 
+set(CartesianInterface_TAG config_refactor)
+set(XBotInterface_TAG config_refactor)
+set(ModelInterfaceRBDL_TAG config_refactor)
+
