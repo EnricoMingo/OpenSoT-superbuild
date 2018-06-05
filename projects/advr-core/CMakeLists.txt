@@ -44,6 +44,11 @@ find_or_build_package_with_tag(compliant_stabilizer ON)
 find_or_build_package_with_tag(mpcqp_walking ON)
 
 # --------------------------------------
+# Compile RobotInterfaceROS
+# --------------------------------------
+find_or_build_package_with_tag(RobotInterfaceROS ON)
+
+# --------------------------------------
 # Compile CartesianInterface
 # --------------------------------------
 find_or_build_package_with_tag(CartesianInterface ON)
