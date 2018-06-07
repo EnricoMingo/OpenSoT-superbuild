@@ -29,7 +29,24 @@ and then:
 
 ```make```
 
-The superbuild system will download all the necessary packages inside the  ```OpenSoT-superbuild``` folder and it will compile and install them inside the ```build``` folder. 
+The superbuild system will download all the necessary packages inside the  ```OpenSoT-superbuild``` folder and it will compile and install them inside the ```build``` folder.
+
+
+After the compilation is finished, goes in ```/OpenSoT-superbuild/build/external/RDC2018/``` and run:
+
+```make install```
+
+Run ```cartesio.launch``` demo:
+-------------------------------
+Open a terminal and run:
+
+```roslaunch RDC2018 cartesio.launch```
+
+Open another terminal and inside the folder ```/OpenSoT-superbuild/build/external/RDC2018/rviz/``` run:
+
+```rviz cartesio.rviz```
+
+Have fun!
 
 Remove the  OpenSoT-superbuild:
 -------------------------------
