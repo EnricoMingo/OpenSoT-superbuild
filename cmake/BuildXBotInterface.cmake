@@ -2,17 +2,14 @@
 include(YCMEPHelper)
 include(FindOrBuildPackage)
 
-find_or_build_package(XBotLogger QUIET)
-find_or_build_package(sharedlibpp QUIET)
 find_or_build_package(bprinter QUIET)
 
 ycm_ep_helper(  XBotInterface
                 TYPE GIT
                 STYLE GITHUB
                 REPOSITORY ADVRHumanoids/XBotInterface.git
-                TAG devel
+                TAG master
                 COMPONENT external
-                DEPENDS XBotLogger
-			sharedlibpp
-			bprinter
-             )
+                DEPENDS bprinter
+		CMAKE_CACHE_ARGS -DBUILD_TESTS:BOOL=false
+	     )
