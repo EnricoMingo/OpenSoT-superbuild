@@ -8,6 +8,11 @@ set(YCM_GIT_GITLAB_ADVRCLOUD_BASE_ADDRESS "ssh://git@gitlab.advrcloud.iit.it/" C
 # ---------------------
 find_or_build_package_with_tag(XBotInterface ON)
 
+# ---------------------
+# Compile XBotLogger
+# ---------------------
+find_or_build_package_with_tag(XBotLogger ON)
+
 # ------------------
 # Compile sharedlibpp
 # ------------------
