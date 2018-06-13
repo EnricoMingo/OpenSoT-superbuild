@@ -21,7 +21,7 @@ set(rbdl_TAG 3791847)
 
 set(OpenSoT_TAG config_refactor)
 set(CartesianInterface_TAG config_refactor)
-set(XBotInterface_TAG config_refactor)
+set(XBotInterface_TAG devel)
 set(RobotInterfaceROS_TAG config_refactor)
 set(ModelInterfaceRBDL_TAG config_refactor)
 
