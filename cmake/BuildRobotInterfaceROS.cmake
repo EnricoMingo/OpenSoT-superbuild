@@ -8,7 +8,7 @@ ycm_ep_helper(  RobotInterfaceROS
                 TYPE GIT
                 STYLE GITHUB
                 REPOSITORY ADVRHumanoids/RobotInterfaceROS.git
-                TAG devel
+                TAG master
                 COMPONENT external
 		DEPENDS XBotInterface
              )

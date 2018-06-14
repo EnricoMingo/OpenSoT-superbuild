@@ -19,9 +19,9 @@ set(trajectory_generator_TAG 332b984362)
 set(rbdl_TAG 3791847)
 
 
-set(OpenSoT_TAG config_refactor)
+set(OpenSoT_TAG devel)
 set(CartesianInterface_TAG config_refactor)
 set(XBotInterface_TAG devel)
-set(RobotInterfaceROS_TAG config_refactor)
-set(ModelInterfaceRBDL_TAG config_refactor)
+set(RobotInterfaceROS_TAG devel)
+set(ModelInterfaceRBDL_TAG devel)
 
