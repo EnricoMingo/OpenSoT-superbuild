@@ -21,7 +21,11 @@ and run:
 
 this will install the needed dependencies.
 
-After finished, open another terminal and create a ```build``` folder inside the ```OpenSoT-superbuild``` folder. Inside the ```build``` folder run:
+After the ```get_dependencies.sh```, you have to source the OpenSoT-superbuild, in ```~/OpenSoT-superbuild/```:
+
+```source OpenSoT-setup.bash```
+
+Now create a ```build``` folder inside the ```OpenSoT-superbuild``` folder. Inside the ```build``` folder run:
 
 ```cmake ..```
 
