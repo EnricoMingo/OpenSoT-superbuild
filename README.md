@@ -48,7 +48,7 @@ Open a terminal and run:
 
 Open another terminal and inside the folder ```/OpenSoT-superbuild/build/external/RDC2018/rviz/``` run:
 
-```rviz cartesio.rviz```
+```rviz -d cartesio.rviz```
 
 Have fun!
 
