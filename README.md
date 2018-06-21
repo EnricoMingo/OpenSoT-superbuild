@@ -46,7 +46,7 @@ Open a terminal and run:
 
 ```roslaunch RDC2018 cartesio.launch```
 
-Open another terminal and inside the folder ```/OpenSoT-superbuild/build/external/RDC2018/rviz/``` run:
+Open another terminal and inside the folder ```/OpenSoT-superbuild/external/RDC2018/rviz/``` run:
 
 ```rviz -d cartesio.rviz```
 
