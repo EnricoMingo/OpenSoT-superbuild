@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/EnricoMingo/OpenSoT-superbuild.svg?branch=master)](https://travis-ci.org/EnricoMingo/OpenSoT-superbuild)
+[![Build Status](https://travis-ci.org/EnricoMingo/OpenSoT-superbuild.svg?branch=14.04)](https://travis-ci.org/EnricoMingo/OpenSoT-superbuild)
 
 OpenSoT-superbuild
 =====================
