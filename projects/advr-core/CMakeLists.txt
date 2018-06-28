@@ -13,11 +13,6 @@ find_or_build_package_with_tag(XBotInterface ON)
 # ---------------------
 find_or_build_package_with_tag(XBotLogger ON)
 
-# ------------------
-# Compile sharedlibpp
-# ------------------
-find_or_build_package_with_tag(sharedlibpp ON)
-
 # -------------------------
 # Compile ModelInterfaceRBDL
 # -------------------------
