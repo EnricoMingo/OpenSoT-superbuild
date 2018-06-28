@@ -46,7 +46,7 @@ script:
 - mkdir -p build
 - cd build
 - cmake ..
-- make -j8
+- make
 
 - cd external/RDC2018/
 - make install
