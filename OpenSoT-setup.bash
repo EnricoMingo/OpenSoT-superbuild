@@ -3,6 +3,7 @@
 ROBOTOLOGY_ROOT=$(dirname $(readlink --canonicalize --no-newline $BASH_SOURCE))
 
 export ROBOTOLOGY_ROOT
+export XBOT_ROOT=$ROBOTOLOGY_ROOT
 
 pathadd() {
     if [ -z ${!1} ]; then

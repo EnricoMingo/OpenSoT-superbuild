@@ -46,25 +46,25 @@ script:
 - mkdir -p build
 - cd build
 - cmake ..
-- make
+- make -j8
 
 - cd external/RDC2018/
 - make install
  
-#- cd ../trajectory_utils/
+- cd ../trajectory_utils/
 #Tests
-#- cmake ../../../external/trajectory_utils -DTRAJECTORY_UTILS_COMPILE_EXAMPLES:BOOL=TRUE -DTRAJECTORY_UTILS_COMPILE_TRJ_DESIG:BOOL=TRUE -DTRAJECTORY_UTILS_COMPILE_TESTS:BOOL=TRUE
-#- make -j8
-#- make install
+- cmake ../../../external/trajectory_utils -DTRAJECTORY_UTILS_COMPILE_EXAMPLES:BOOL=TRUE -DTRAJECTORY_UTILS_COMPILE_TRJ_DESIG:BOOL=TRUE -DTRAJECTORY_UTILS_COMPILE_TESTS:BOOL=TRUE
+- make -j8
+- make install
 #- make test ARGS="-V"
-#- make test
+- make test
 
 - cd ../XBotInterface
 - cmake ../../../external/XBotInterface -DBUILD_TESTS:BOOL=TRUE
 - make -j8
 - make install
-- make test ARGS="-V"
-#- make test 
+#- make test ARGS="-V"
+- make test 
 
 - cd ../../../external/OpenSoT
 - git fetch --all
