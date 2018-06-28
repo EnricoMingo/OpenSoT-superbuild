@@ -5,9 +5,9 @@ OpenSoT-superbuild
 
 OpenSoT dedicated building system.
 
-Build and Install instruction (Ubuntu 14.04 LTS & ROS Indigo Igloo):
+Build and Install instruction (Ubuntu 16.04 LTS & ROS Kinetic Karma):
 --------------------------------------------------------------------
-Before cloning, make sure to have installed ROS Indigo in your machine.
+Before cloning, make sure to have installed ROS Kinetic in your machine.
 
 Clone the repository in any folder you want.
 
