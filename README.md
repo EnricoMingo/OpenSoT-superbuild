@@ -56,3 +56,6 @@ Remove the  OpenSoT-superbuild:
 -------------------------------
 Just remove the ```OpenSoT-superbuild``` folder.
 
+Ubuntu 14.04:
+------------
+For Ubuntu 14.04 refers to the following [branch](https://github.com/EnricoMingo/OpenSoT-superbuild/tree/14.04)
