@@ -71,7 +71,7 @@ script:
 - git checkout devel
 
 - cd ../../build/external/OpenSoT
-- cmake ../../../external/OpenSoT -DOPENSOT_COMPILE_TESTS:BOOL=TRUE
+- cmake ../../../external/OpenSoT -DOPENSOT_COMPILE_TESTS:BOOL=TRUE -DCMAKE_BUILD_TYPE:STRING=Release
 - make -j8
 - make install
 #- make test ARGS="-V"
