@@ -11,25 +11,35 @@ notifications:
 #git:
 #    submodules: false
 # Use sed to replace the SSH URL with the public URL, then initialize submodules
+
 sudo: required
+
 before_install:
-    #- go get ADVRHumanoids/xbotcoremodel.git
-    #- sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
-    #- git submodule update --init --recursive
+	- sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+	- sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 421C365BD9FF1F717815A3895523BAEEB01FA116
+	- sudo apt-get update
+
+addons:
+    apt:
+        packages:
+            - cmake
+            - ros-kinetic-desktop
+            - ros-kinetic-rviz-visual-tools
+            - libxml2-dev
+            - libxslt1-dev
+            - python-dev
+
 script: 
 #config git
 - git config --global user.name "Enrico Mingo"
 - git config --global user.email "enrico.mingo@iit.it"
 #source env variables and install missing packages
-- sudo apt-get install cmake
-- sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
-- sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 421C365BD9FF1F717815A3895523BAEEB01FA116
-- sudo apt-get update
-- sudo apt-get --allow-unauthenticated install ros-kinetic-desktop
+#- sudo apt-get install cmake
+#- sudo apt-get --allow-unauthenticated install ros-kinetic-desktop
 - sudo rosdep init
 - rosdep update
 - source /opt/ros/kinetic/setup.bash
-- sudo apt-get --allow-unauthenticated install ros-kinetic-rviz-visual-tools #THIS SHOULD BE INSTALLED BY get_dependency.sh
+#- sudo apt-get --allow-unauthenticated install ros-kinetic-rviz-visual-tools #THIS SHOULD BE INSTALLED BY get_dependency.sh
 - pwd
 - ls
 - ./scripts/get_dependencies.sh
