@@ -42,3 +42,8 @@ find_or_build_package_with_tag(RobotInterfaceROS ON)
 # Compile CartesianInterface
 # --------------------------------------
 find_or_build_package_with_tag(CartesianInterface ON)
+
+# --------------------------------------
+# Compile RMLTypeII
+# --------------------------------------
+find_or_build_package_with_tag(RMLTypeII ON)
