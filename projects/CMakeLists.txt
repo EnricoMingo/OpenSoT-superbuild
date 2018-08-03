@@ -27,3 +27,4 @@ IF(SUPERBUILD_CAPSULE)
 ENDIF(SUPERBUILD_CAPSULE)
 
 find_or_build_package_with_tag(RDC2018 ON)
+find_or_build_package_with_tag(milpik_node ON)
