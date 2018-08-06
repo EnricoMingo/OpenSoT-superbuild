@@ -13,11 +13,6 @@ find_or_build_package_with_tag(XBotCore ON)
 # ---------------------
 find_or_build_package_with_tag(XBotInterface ON)
 
-# ---------------------
-# Compile XBotLogger
-# ---------------------
-find_or_build_package_with_tag(XBotLogger ON)
-
 # -------------------------
 # Compile ModelInterfaceRBDL
 # -------------------------
