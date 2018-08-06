@@ -28,6 +28,8 @@ pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/build/install/lib
 #COUPLE OF TEST ROBOTS
 pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/IITComanRosPkg
 pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/abb-yumi-ros-pkg
+pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/hyq-description
+pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/iit-flying_arm-ros-pkg
 
 pathadd PYTHONPATH $ROBOTOLOGY_ROOT/build/install/lib/python2.7/site-packages
 pathadd PKG_CONFIG_PATH $ROBOTOLOGY_ROOT/build/install/lib/pkgconfig
