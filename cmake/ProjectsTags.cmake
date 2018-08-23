@@ -20,7 +20,7 @@ set(rbdl_TAG 3791847)
 
 
 set(OpenSoT_TAG devel)
-set(CartesianInterface_TAG devel)
+set(CartesianInterface_TAG db2f41f9b7d6333e26ba9b3341d3611cb9de81bb)
 set(XBotInterface_TAG devel)
 set(RobotInterfaceROS_TAG devel)
 set(ModelInterfaceRBDL_TAG devel)
