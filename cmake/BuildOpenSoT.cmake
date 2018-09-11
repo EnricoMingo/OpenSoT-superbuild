@@ -16,7 +16,7 @@ endif()
 
 ycm_ep_helper(  OpenSoT TYPE GIT
                 STYLE GITHUB
-                REPOSITORY robotology-playground/OpenSoT.git
+                REPOSITORY ADVRHumanoids/OpenSoT.git
                 TAG devel
                 COMPONENT external
                 DEPENDS XBotInterface
